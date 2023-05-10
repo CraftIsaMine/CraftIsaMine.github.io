@@ -1,0 +1,5 @@
+assets/*
+*.txt
+css/*.scss
+css/*.css.map
+js/*.ts

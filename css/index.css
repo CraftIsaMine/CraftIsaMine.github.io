@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: Josefin Sans;
+  background-color: #000;
+  color: #fff;
+  max-width: 100vw;
+  height: 200vh;
+  overflow-x: hidden;
+}
+body header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  box-shadow: 0px 30px 30px #000;
+}
+body header a.logo {
+  display: flex;
+  align-items: center;
+  max-height: 35px;
+  text-decoration: none;
+  padding-left: 5vw;
+}
+body header a.logo p {
+  font-size: 35px;
+  color: #fff;
+  text-transform: uppercase;
+}
+body header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+  padding-right: 5vw;
+}
+body header ul li {
+  list-style: none;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body header ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+body header ul li a.active {
+  background: #fff;
+  color: black;
+}
+body header ul li a:hover {
+  background: #fff;
+  color: black;
+}
+body header ul li ul.UlContact {
+  position: absolute;
+}
+body header ul li.contact:hover ul.UlContact {
+  display: none;
+}
+body section.hero {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  margin-top: 20vh;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  overflow: hidden;
+}
+body section.hero .infos .text {
+  display: flex;
+  flex-direction: column;
+}
+body section.hero .infos .text h1 {
+  font-size: 45px;
+}
+body section.hero .infos .text h2 {
+  font-size: 35px;
+}
+body section.hero .infos .text h3 {
+  font-size: 25px;
+}
+body section.hero .infos .text h3 span.metier {
+  color: blue;
+}
+body section.hero .infos .medias a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid blue;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+}
+body section.hero .image img {
+  height: 60vh;
+  border-radius: 50%;
+  border: 5px solid blue;
+}
+body section.contact {
+  margin-top: 20vh;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+body section.contact .infos .text {
+  display: flex;
+  flex-direction: column;
+}
+body section.contact .infos .text h1 {
+  font-size: 45px;
+}
+body section.contact .infos .text h2 {
+  font-size: 35px;
+}
+body section.contact .infos .text h3 {
+  font-size: 25px;
+}
+body section.contact .infos .text h3 span.metier {
+  color: blue;
+}
+body section.contact .infos .medias a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid blue;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+}
+body section.contact .image img {
+  height: 60vh;
+}/*# sourceMappingURL=index.css.map */
