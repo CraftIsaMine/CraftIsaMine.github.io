@@ -3,8 +3,8 @@ var liste = ['Game Maker', 'Designer','Youtuber','Social Media Manager']
 const typed = new Typed('#metier', {
     strings: liste,
     typeSpeed: 100,
-    backSpeed:100,
-    backDelay:1000,
+    backSpeed:50,
+    backDelay:2000,
     loop:true
 });
 

@@ -24,7 +24,6 @@ body {
   background-color: #000;
   color: #fff;
   max-width: 100vw;
-  height: 200vh;
   overflow-x: hidden;
 }
 body header {
@@ -51,9 +50,14 @@ body header a.logo p {
   font-size: 35px;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 body header ul {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -82,89 +86,106 @@ body header ul li a:hover {
   color: black;
 }
 body header ul li ul.UlContact {
+  display: none;
+}
+body header ul li ul.UlContact li {
+  border-bottom: none;
+  height: 25px;
+}
+body header ul li ul.UlContact li img {
+  height: 25px;
+}
+body header ul li:hover ul.UlContact {
+  display: inline-block;
   position: absolute;
+  text-align: center;
+  transform: translateY(20%) translateX(-25%);
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 5px;
+  z-index: 1000;
 }
-body header ul li.contact:hover ul.UlContact {
-  display: flex;
+body header ul li:hover ul.UlContact a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 15px;
 }
-body section.hero {
+body header ul li:hover ul.UlContact a:hover {
+  background: #fff;
+  color: #000;
+}
+body div#container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+body div#container section {
+  scroll-snap-align: center;
+  height: 100vh;
+}
+body div#container section.hero {
   width: 100vw;
-  height: 80vh;
   display: flex;
-  margin-top: 20vh;
   align-items: center;
   justify-content: center;
   gap: 5vw;
   overflow: hidden;
 }
-body section.hero .infos .text {
+body div#container section.hero .infos .text {
   display: flex;
   flex-direction: column;
 }
-body section.hero .infos .text h1 {
+body div#container section.hero .infos .text h1 {
   font-size: 45px;
 }
-body section.hero .infos .text h2 {
+body div#container section.hero .infos .text h2 {
   font-size: 35px;
 }
-body section.hero .infos .text h3 {
+body div#container section.hero .infos .text h3 {
   font-size: 25px;
 }
-body section.hero .infos .text h3 span.metier {
+body div#container section.hero .infos .text h3 span.metier {
   color: blue;
 }
-body section.hero .infos .medias a {
+body div#container section.hero .infos .medias a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   background: transparent;
   border: 0.2rem solid blue;
   border-radius: 50%;
-  margin: 3rem 1.5rem 3rem 0;
+  margin: 0 0.5rem;
 }
-body section.hero .image img {
+body div#container section.hero .image img {
   height: 60vh;
   border-radius: 50%;
   border: 5px solid blue;
 }
-body section.contact {
-  margin-top: 20vh;
+body div#container section.contact, body div#container section.graphiste {
   width: 100vw;
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5vw;
 }
-body section.contact .infos .text {
+body div#container section.contact .infos .text, body div#container section.graphiste .infos .text {
   display: flex;
   flex-direction: column;
 }
-body section.contact .infos .text h1 {
+body div#container section.contact .infos .text h1, body div#container section.graphiste .infos .text h1 {
   font-size: 45px;
 }
-body section.contact .infos .text h2 {
+body div#container section.contact .infos .text h2, body div#container section.graphiste .infos .text h2 {
   font-size: 35px;
 }
-body section.contact .infos .text h3 {
+body div#container section.contact .infos .text h3, body div#container section.graphiste .infos .text h3 {
   font-size: 25px;
 }
-body section.contact .infos .text h3 span.metier {
+body div#container section.contact .infos .text h3 span.metier, body div#container section.graphiste .infos .text h3 span.metier {
   color: blue;
 }
-body section.contact .infos .medias a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: transparent;
-  border: 0.2rem solid blue;
-  border-radius: 50%;
-  margin: 3rem 1.5rem 3rem 0;
-}
-body section.contact .image img {
+body div#container section.contact .image img, body div#container section.graphiste .image img {
   height: 60vh;
 }/*# sourceMappingURL=index.css.map */
