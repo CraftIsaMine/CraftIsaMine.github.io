@@ -1,8 +1,8 @@
-var liste = ['Game Maker', 'Designer','Youtuber','Social Media Manager']
+var liste = ['Game Maker', 'Designer','Video Editor','Social Media Manager']
 
 const typed = new Typed('#metier', {
     strings: liste,
-    typeSpeed: 100,
+    typeSpeed: 150,
     backSpeed:50,
     backDelay:2000,
     loop:true
@@ -18,3 +18,13 @@ ScrollReveal({
 
 ScrollReveal().reveal('.infos',{origin:'top'});
 ScrollReveal().reveal('.image',{origin:'bottom'});
+
+function scrollAppear(){
+    var introText = document.querySelector('.intro-text');
+    var introPosition = introText.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.5;
+
+    if(introPosition < screenPosition){
+        introText.classList.add('intro-appear');
+    }
+}

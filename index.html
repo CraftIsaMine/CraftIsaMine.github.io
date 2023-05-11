@@ -11,33 +11,32 @@
 	<meta property="og:title" content="CraftIsaMine" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.craftisamine.github.io" />
-	<meta property="og:image" content="https://www.craftisamine.github.io/assets/MWA.png" />
-	<meta property="og:description"
-		content="Découvrez le portfolio de CraftIsaMine, " />
-	<meta name="theme-color" content="#3ae378" />
+	<meta property="og:image" content="https://www.craftisamine.github.io/MWA.png" />
+	<meta property="og:description" content="Découvrez le portfolio de CraftIsaMine" />
+	<meta name="theme-color" content="#0000ff" />
 
 	<meta charset="utf-8">
 </head>
 
 <body>
     <header class="navbar">
-        <a href="https://www.craftisamine.github.io" class="logo">
+        <a href="index.html" class="logo">
             <p>CraftIsaMine</p>
         </a>
         <ul>
-            <li><a href="" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="work.html">Work</a></li>
-            <li><a href="">Contact</a>
+            <li><a>Contact</a>
                 <ul class="UlContact">
-                    <li><a href="mailto:gabriel.bazart@gmail.com" target="_blank">Mail</a></li>
-                    <li><a href="" target="_blank">Discord</a></li>
-                    <li><a href="" target="_blank">Instagram</a></li>
+                    <li><a href="mailto:craftisamine@gmail.com" target="_blank">Mail</a></li>
+                    <li><a href="https://www.youtube.com/@craftisamine" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/craftisamine" target="_blank">Instagram</a></li>
                 </ul>
             </li>
         </ul>
     </header>
 
-    <div id="container">
+    <div class="container">
         <section class="hero">
             <div class="infos">
                 <div class="text">
@@ -46,8 +45,8 @@
                     <h3 class="presentation">and I'm a <span class="metier" id="metier"></span></h3>
                 </div>
                 <div class="medias">
-                    <a href="#"><box-icon color="blue" size="1.5rem" name='instagram-alt' type='logo' ></box-icon></a>
-                    <a href="#"><box-icon color="blue" size="1.5rem" type='logo' name='youtube'></box-icon></a>
+                    <a target="_blank" href="https://www.instagram.com/craftisamine"><box-icon color="blue" size="1.5rem" name='instagram-alt' type='logo' ></box-icon></a>
+                    <a target="_blank" href="https://www.youtube.com/@craftisamine"><box-icon color="blue" size="1.5rem" type='logo' name='youtube'></box-icon></a>
                 </div>
             </div>
             <div class="image">
@@ -55,31 +54,45 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="game">
             <div class="image">
-                <img src="./assets/Mish-Skywalker.png" alt="CraftIsaMine design image">
+                <iframe src="https://www.youtube.com/embed/vYR8SMnGLEE?autoplay=1;controls=0" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media"></iframe>
             </div>
             <div class="infos">
                 <div class="text">
-                    <h2>I'm a designer</h2>
+                    <h1>I'm a <span class="metier">game maker</span></h1>
                 </div>
                 <div class="button">
-                    <a href="work.html#designer">Contact Me</a>
+                    <a href="mailto:craftisamine@gmail.com">Contact Me</a>
                 </div>
             </div>
         </section>
 
-        <section class="graphiste">
+        <section class="videaste">
             <div class="infos">
                 <div class="text">
-                    <h2>I'm a designer</h2>
+                    <h1>I'm a <span class="metier">Youtuber</span></h1>
                 </div>
                 <div class="button">
-                    <a href="work.html#designer">See My Work</a>
+                    <a href="https://www.youtube.com/@craftisamine">See My Video</a>
                 </div>
             </div>
             <div class="image">
-                <img src="./assets/Club-NSI.png" alt="CraftIsaMine design image">
+                <img src="./assets/Bannière-YouTube-2.png" alt="CraftIsaMine design image">
+            </div>
+        </section>
+
+        <section class="socialmedia">
+            <div class="infos">
+                <div class="text">
+                    <h1>I'm a <span class="metier">Social Media Manager</span></h1>
+                </div>
+                <div class="button">
+                    <a href="https://www.instagram.com/altais_quest">See Altaïs's quest</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./assets/insta_altais.png" alt="Altais Quest insta image">
             </div>
         </section>
     </div>
@@ -90,7 +103,8 @@
     <!--Scroll reveal js-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="js/index.js"></script>
-
+    <!--Box Icons-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="js/index.js"></script>
 </body>
